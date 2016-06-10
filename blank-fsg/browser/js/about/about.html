@@ -1,7 +1,63 @@
-<section id="about">
-    <!-- <carousel interval="2000">
-        <slide ng-repeat="image in images">
-            <img height="300" ng-src="{{ image }}" />
-        </slide>
-    </carousel> -->
-</section>
+<md-button class="md-button" ng-click="layout()">Layout</md-button>
+
+<div class="grid">
+	<div class="grid-sizer"></div>
+	<div class="grid-item slide" ng-repeat="item in items">
+		<img class="slide"  src="{{item}}" alt=""/>
+	</div>
+</div> 
+
+
+<!-- <div class="clearfix"></div> -->
+
+
+<!-- <div class="grid">
+  <div class="grid-sizer"></div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+  </div>
+</div> -->
+
+
+
+
+
+<!-- <div class="grid">
+  <div class="grid-item" ng-repeat="block in blocks">
+  	{{block.num}}
+  </div>
+</div>
+
+
+<div class="grid">
+  <div class="grid-item">1</div>
+  <div class="grid-item grid-item--width2">2</div>
+  <div class="grid-item grid-item--height2">3</div>
+  <div class="grid-item">4</div>
+  <div class="grid-item grid-item--width2">5</div>
+  <div class="grid-item grid-item--height2">6</div>
+</div>
